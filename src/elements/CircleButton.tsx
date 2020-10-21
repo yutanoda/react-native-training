@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Font } from 'expo';
+import * as Font from 'expo-font'
 import fontAwesome from '../../assets/fonts/fa-solid-900.ttf';
 
 class CircleButton extends React.Component {
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
   },
   circleButtonTitle: {
-    fontFamily: 'FontAwsome',
+    fontFamily: 'FontAwesome',
     fontSize: 32,
     color: 'white',
   },
