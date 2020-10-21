@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import MemoListScreen from './src/screens/MemoListScreen';
+import MemoDetailScreen from './src/screens/MemoDetailScreen';
 import Appbar from './src/components/Appbar';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Appbar></Appbar>
-      <MemoListScreen></MemoListScreen>
+      <MemoDetailScreen></MemoDetailScreen>
     </View>
   );
 }
@@ -17,8 +17,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFDF6',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     paddingTop: 78,
   },
-
 });
