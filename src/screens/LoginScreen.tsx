@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableHighlight } from 'react-native';
-import CircleButton from '../elements/CircleButton';
 
 class LoginScreen extends React.Component {
   render () {
@@ -11,7 +10,7 @@ class LoginScreen extends React.Component {
         </Text>
         <TextInput style={styles.input} value="Email Adress" />
         <TextInput style={styles.input} value="Password" />
-        <TouchableHighlight style={styles.button} onPress={() => {}} >
+        <TouchableHighlight style={styles.button} onPress={() => { this.props.navigation.navigate('MemoListScreen'); }}  >
           <Text style={styles.buttonTitle}>ログインする</Text>
         </TouchableHighlight>
       </View>
@@ -52,6 +51,7 @@ const styles = StyleSheet.create({
   },
   buttonTitle: {
     color: '#fff',
+    fontSize: 20,
   },
 });
 

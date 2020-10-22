@@ -15,6 +15,10 @@ export default function App() {
     <NavigationContainer>
       <Root.Navigator>
         <Root.Screen 
+          name="LoginScreen" 
+          component={LoginScreen} 
+          options={ options } />
+        <Root.Screen 
           name="MemoListScreen" 
           component={MemoListScreen} 
           options={ options } />
@@ -27,10 +31,6 @@ export default function App() {
           component={MemoEditScreen} 
           options={ options } />
         <Root.Screen 
-          name="LoginScreen" 
-          component={LoginScreen} 
-          options={ options } />
-        <Root.Screen 
           name="SignupScreen" 
           component={SignupScreen} 
           options={ options } />
@@ -39,5 +39,11 @@ export default function App() {
   )
 }
 
-const options =  { title: 'Memot', headerStyle: {backgroundColor: '#265366'}, headerTitleStyle: {color: '#fff'} }
+const options =  { 
+  title: 'Memot', 
+  headerBackTitle: null,
+  headerStyle: {backgroundColor: '#265366'}, 
+  headerTitleStyle: {color: '#fff'},
+  headerTintColor: '#fff',
+}
 
