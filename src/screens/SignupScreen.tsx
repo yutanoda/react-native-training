@@ -2,17 +2,17 @@ import React from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableHighlight } from 'react-native';
 import CircleButton from '../elements/CircleButton';
 
-class LoginScreen extends React.Component {
+class SignupScreen extends React.Component {
   render () {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>
-          ログイン
+          メンバー登録
         </Text>
         <TextInput style={styles.input} value="Email Adress" />
         <TextInput style={styles.input} value="Password" />
-        <TouchableHighlight style={styles.button} onPress={() => {}} >
-          <Text style={styles.buttonTitle}>ログインする</Text>
+        <TouchableHighlight style={styles.button} onPress={() => {}} underlayColor='#C70F56' >
+          <Text style={styles.buttonTitle}>送信する</Text>
         </TouchableHighlight>
       </View>
 
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+export default SignupScreen;
